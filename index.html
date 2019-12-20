@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>Terminal</title> 
+    <link rel="shortcut icon" href="Terminalicon2.png" />
+</head>
+    
+    <body>
+<div id="vue-terminal" class="vue-terminal"></div>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="vue-terminal.js"></script>
+    <link rel="stylesheet" href="main.css">
+
+    <script>
+        window.onload = function() {
+            let element = document.getElementsByClassName("vue-terminal-input")[0];
+            while (document.activeElement.id != element.id) {
+                element.focus();
+            }
+        };
+    </script>
+
+</body>
+</html>
